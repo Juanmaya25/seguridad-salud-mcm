@@ -6,7 +6,7 @@ import {
   Shield, Leaf, Users, ClipboardCheck, AlertTriangle,
   BookOpen, FileText, CheckCircle, Phone, Mail, MapPin,
   ChevronDown, Menu, X, ArrowRight, Star, Award, TrendingDown,
-  Globe, Tractor, Sprout, Factory, HelpCircle, Plus, Minus
+  Globe, Tractor, Sprout, Factory, HelpCircle, Plus, Minus, TrafficCone
 } from "lucide-react";
 
 const WHATSAPP = "573192859483";
@@ -323,6 +323,7 @@ function Sectors() {
     { icon: Tractor, title: "Haciendas Ganaderas", desc: "Manejo seguro de animales, maquinaria pesada y zonas de ordeño." },
     { icon: Sprout, title: "Cultivos y Plantaciones", desc: "Manejo de agroquímicos, herramientas cortopunzantes y trabajo a la intemperie." },
     { icon: Factory, title: "Plantas de Beneficio", desc: "Procesos industriales agropecuarios, bioseguridad y manipulación de alimentos." },
+    { icon: TrafficCone, title: "Sector de Vías", desc: "Obras viales y de infraestructura: señalización, trabajo en zonas de tránsito, maquinaria pesada y planes de movilidad." },
   ];
   return (
     <section id="sectores" className="py-24 bg-white">
@@ -334,9 +335,9 @@ function Sectors() {
             <p className="text-gray-500 max-w-xl mx-auto">Cada unidad productiva tiene riesgos únicos. Adapto los protocolos a la realidad de su operación.</p>
           </div>
         </Reveal>
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {sectores.map(({ icon: Icon, title, desc }, i) => (
-            <Reveal key={title} delay={i * 0.12}>
+            <Reveal key={title} delay={i * 0.1}>
               <div className="service-card glass-card rounded-3xl p-8 text-center cursor-default h-full">
                 <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-[#4DD9C0] to-[#4CAF50] flex items-center justify-center mx-auto mb-5 shadow-xl pulse-glow">
                   <Icon size={28} className="text-white" />
