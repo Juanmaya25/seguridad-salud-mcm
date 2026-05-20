@@ -6,7 +6,7 @@ import {
   Shield, Leaf, Users, ClipboardCheck, AlertTriangle,
   BookOpen, FileText, CheckCircle, Phone, Mail, MapPin,
   ChevronDown, Menu, X, ArrowRight, Star, Award, TrendingDown,
-  Globe, Tractor, Sprout, Factory, HelpCircle, Plus, Minus, TrafficCone
+  Globe, Tractor, Sprout, Factory, HelpCircle, Plus, Minus, TrafficCone, Pickaxe, Wrench
 } from "lucide-react";
 
 const WHATSAPP = "573192859483";
@@ -142,7 +142,7 @@ function Hero() {
               &ldquo;Sembrando cultura de prevención, cosechando productividad y bienestar.&rdquo;
             </p>
             <p className="text-gray-500 mb-8 leading-relaxed">
-              Especialización en el <span className="text-[#4CAF50] font-semibold">sector agropecuario y pecuario</span>.
+              Experiencia en <span className="text-[#4CAF50] font-semibold">agropecuario, minería, vías y talleres de maquinaria</span>.
               Transformo el cumplimiento normativo en una herramienta de productividad.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
@@ -291,7 +291,7 @@ function Services() {
           <div className="text-center mb-16">
             <span className="text-[#4DD9C0] font-bold text-sm tracking-widest uppercase">Servicios</span>
             <h2 className="text-4xl font-black text-[#1C1C1C] mt-2 mb-4">Servicios Especializados</h2>
-            <p className="text-gray-500 max-w-xl mx-auto">Soluciones integrales de SST con enfoque especial en el sector agropecuario y pecuario colombiano.</p>
+            <p className="text-gray-500 max-w-xl mx-auto">Soluciones integrales de SST adaptadas a múltiples sectores productivos en Colombia.</p>
           </div>
         </Reveal>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -324,6 +324,8 @@ function Sectors() {
     { icon: Sprout, title: "Cultivos y Plantaciones", desc: "Manejo de agroquímicos, herramientas cortopunzantes y trabajo a la intemperie." },
     { icon: Factory, title: "Plantas de Beneficio", desc: "Procesos industriales agropecuarios, bioseguridad y manipulación de alimentos." },
     { icon: TrafficCone, title: "Sector de Vías", desc: "Obras viales y de infraestructura: señalización, trabajo en zonas de tránsito, maquinaria pesada y planes de movilidad." },
+    { icon: Pickaxe, title: "Minería", desc: "Conocimientos en minas de socavón y minería a cielo abierto: trabajo en alturas, espacios confinados, polvos y explosivos." },
+    { icon: Wrench, title: "Talleres de Maquinaria", desc: "Maquinaria blanca, amarilla y pesada: protocolos de mantenimiento seguro, riesgo mecánico, eléctrico y manejo de cargas." },
   ];
   return (
     <section id="sectores" className="py-24 bg-white">
@@ -425,11 +427,11 @@ function Benefits() {
         <Reveal delay={0.2}>
           <div className="mt-16 glass-card rounded-3xl p-8 border border-[#4DD9C0]/30 text-center">
             <Leaf size={32} className="text-[#4CAF50] mx-auto mb-3" />
-            <h3 className="text-2xl font-black mb-2 text-[#1C1C1C]">Especialista en el Sector Agropecuario y Pecuario</h3>
+            <h3 className="text-2xl font-black mb-2 text-[#1C1C1C]">Experiencia en múltiples sectores productivos</h3>
             <p className="text-gray-600 max-w-2xl mx-auto text-sm leading-relaxed">
-              El sector agropecuario presenta desafíos únicos: exposición a agentes biológicos, manejo de agroquímicos,
-              uso de maquinaria pesada y condiciones climáticas variables. Garantizo que su unidad productiva cumpla con
-              la Resolución 0312 de 2019, protegiendo el recurso más valioso: su gente.
+              Trabajo con haciendas y cultivos, minas de socavón y a cielo abierto, obras viales, talleres de
+              maquinaria blanca, amarilla y pesada. Cada sector tiene riesgos únicos — adapto los protocolos a la
+              realidad de su operación para que cumpla la Resolución 0312 de 2019 y proteja a su gente.
             </p>
           </div>
         </Reveal>
@@ -445,7 +447,7 @@ function FAQ() {
     { q: "¿Atiende empresas fuera de Entreríos, Antioquia?", a: "Sí. Aunque mi base es Entreríos, Antioquia, atiendo unidades productivas en toda la región con visitas técnicas programadas y acompañamiento remoto." },
     { q: "¿La primera consulta tiene costo?", a: "No. La primera consulta de diagnóstico es gratuita. Evaluamos el estado actual de su empresa e identificamos las brechas principales sin compromiso." },
     { q: "¿Cuánto tiempo toma implementar el SG-SST?", a: "Depende del tamaño y nivel de riesgo de la empresa. Tras el diagnóstico inicial entrego un plan con cronograma realista y priorizado según su presupuesto." },
-    { q: "¿Trabaja con el sector agropecuario específicamente?", a: "Sí, es mi especialización. Manejo riesgos propios del campo: agentes biológicos, agroquímicos, maquinaria pesada, contacto animal y planes de emergencia rural." },
+    { q: "¿Con qué sectores trabaja?", a: "Atiendo varios sectores: agropecuario (haciendas y cultivos), minería de socavón y a cielo abierto, obras viales y talleres de maquinaria blanca, amarilla y pesada. Adapto los protocolos a los riesgos específicos de cada operación." },
   ];
   const [open, setOpen] = useState<number | null>(0);
   return (
